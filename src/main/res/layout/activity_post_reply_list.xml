@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E9"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:text="Title"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_title_reply"
+            android:textSize="20dp"
+            android:textColor="#555352" />
+        <TextView
+            android:text="Message"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_text_reply"
+            android:textSize="18dp"
+            android:textColor="#747270" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+        <!--<TextView-->
+        <!--    android:layout_width="match_parent"-->
+        <!--    android:layout_height="match_parent"-->
+        <!--    android:id="@+id/tv_messages"-->
+        <!--    android:textColor="#e3e3e3"-->
+        <!--    android:textSize="20dp"/>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="25dp"
+            android:id="@+id/recycler_reply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/et_reply_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:hint=" REPLY"
+                android:textSize="18dp"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_weight="0.8"
+                />
+
+        <!--<Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_Addreply"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_button"
+            android:text=">"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            />-->
+
+        <ImageButton
+            android:id="@+id/btn_AddPost"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_send_black_24dp"
+            android:background="@drawable/corner"
+            />
+
+    </LinearLayout>
+    <!--    Add Bottom panel MyPosts AllPosts  Profile Info-->
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout">
+
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/bg"
+            app:srcCompat="@drawable/bg" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:clickable="true"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#FFFFFF"
+
+            android:id="@+id/btn_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-130dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man" />
+
+        <ImageButton
+            tools:ignore="MissingConstraints"
+            android:id="@+id/btn_gallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginLeft="260dp"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:padding="27dp"
+            android:src="@drawable/ic_mode_edit_black_24dp"
+            android:background="@drawable/corner1"
+            />
+        />
+
+        <!--  <de.hdodenhof.circleimageview.CircleImageView
+
+              android:id="@+id/btn_gallery"
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+
+              android:layout_marginTop="120dp"
+              android:layout_marginLeft="235dp"
+              android:clickable="true"
+              android:elevation="5dp"
+              android:padding="25dp"
+
+              android:src="@drawable/gal"
+              app:civ_border_color="#FFFFFF"
+              app:civ_border_width="1dp" /> -->
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_marginTop="0dp"
+            android:background="#F7F7F9"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:hint="USER_NAME"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="LOCATION"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="AGE"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="HOME/OFFICE"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_signout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/destination"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/mybutton"
+                android:clickable="true"
+                android:text="SIGN OUT"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/destination"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/mybutton"
+                android:clickable="true"
+                android:text="SAVE"
+                android:textColor="@android:color/white"/>
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
