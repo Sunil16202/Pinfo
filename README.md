@@ -4,9 +4,9 @@ and builds on the concept of geo-tagged messages. This app is a user-driven app.
 This app is built on android studio and we are using Firebase for our server.
 
 <p float="left">
-<img src="preview/Chats.png" width="350">
-<img width="350"  src="preview/Login.png">
-<img src="preview/Profile.png" width="350">
+<img src="preview/Chats.png" width="275">
+<img width="275"  src="preview/Login.png">
+<img src="preview/Profile.png" width="275">
 </p>
 
 
